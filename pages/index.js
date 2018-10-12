@@ -1,12 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
-import Nav from '../components/nav'
+import defaultPage from '../client/hoc/defaultPage.js';
 
 const Home = () => (
   <div>
     <Head title="Home" />
-    <Nav />
 
     <div className="hero">
       <h1 className="title">Welcome to Next!</h1>
@@ -88,4 +87,4 @@ const Home = () => (
   </div>
 )
 
-export default Home
+export default defaultPage(Home)
